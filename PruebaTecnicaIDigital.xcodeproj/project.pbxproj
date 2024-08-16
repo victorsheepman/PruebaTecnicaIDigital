@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8491C24B2C6E40AE00A6CC0E /* PruebaTecnicaIDigitalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8491C24A2C6E40AE00A6CC0E /* PruebaTecnicaIDigitalApp.swift */; };
-		8491C24D2C6E40AE00A6CC0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8491C24C2C6E40AE00A6CC0E /* ContentView.swift */; };
 		8491C24F2C6E40AF00A6CC0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8491C24E2C6E40AF00A6CC0E /* Assets.xcassets */; };
 		8491C2522C6E40AF00A6CC0E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8491C2512C6E40AF00A6CC0E /* Preview Assets.xcassets */; };
 		8491C25A2C6E419C00A6CC0E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8491C2592C6E419C00A6CC0E /* NetworkManager.swift */; };
@@ -23,7 +22,6 @@
 /* Begin PBXFileReference section */
 		8491C2472C6E40AE00A6CC0E /* PruebaTecnicaIDigital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaTecnicaIDigital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8491C24A2C6E40AE00A6CC0E /* PruebaTecnicaIDigitalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaTecnicaIDigitalApp.swift; sourceTree = "<group>"; };
-		8491C24C2C6E40AE00A6CC0E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8491C24E2C6E40AF00A6CC0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8491C2512C6E40AF00A6CC0E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8491C2592C6E419C00A6CC0E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -71,7 +69,6 @@
 				8491C25B2C6E430000A6CC0E /* Resource */,
 				8491C2582C6E418400A6CC0E /* Manager */,
 				8491C24A2C6E40AE00A6CC0E /* PruebaTecnicaIDigitalApp.swift */,
-				8491C24C2C6E40AE00A6CC0E /* ContentView.swift */,
 				8491C24E2C6E40AF00A6CC0E /* Assets.xcassets */,
 				8491C2502C6E40AF00A6CC0E /* Preview Content */,
 			);
@@ -200,7 +197,6 @@
 			files = (
 				8491C25A2C6E419C00A6CC0E /* NetworkManager.swift in Sources */,
 				8491C26B2C6E5B9000A6CC0E /* MovieListView.swift in Sources */,
-				8491C24D2C6E40AE00A6CC0E /* ContentView.swift in Sources */,
 				8491C26F2C6E75E300A6CC0E /* MovieDetailView.swift in Sources */,
 				8491C26D2C6E5E3800A6CC0E /* MovieCardView.swift in Sources */,
 				8491C2602C6E494C00A6CC0E /* MovieModel.swift in Sources */,

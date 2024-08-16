@@ -22,17 +22,14 @@ struct MovieCard: View {
                     .frame(height: 240)
                     .clipped()
             }placeholder: {
-                Image("image")
-                    .resizable()
+                Rectangle()
+                    .fill(Color.gray) 
                     .padding(.bottom, 5)
-                    .scaledToFill()
                     .frame(height: 240)
-                    .clipped()
             }
             
           
             Text(name)
-        
                 .font(.headline)
                 .fontWeight(.semibold)
                 .foregroundColor(.primary)
@@ -52,11 +49,6 @@ struct MovieCard: View {
 
         .background(Color(.systemBackground))
         .cornerRadius(8)
-        .overlay(
-            RoundedRectangle(cornerRadius: 8)
-                .stroke(Color("Gray3"), lineWidth: 1)
-        )
-        
     }
 }
 

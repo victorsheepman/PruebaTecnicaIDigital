@@ -27,7 +27,10 @@ struct MovieDetailView: View {
                         .frame(width: 200, height: 300)
                         .clipped()
                 }placeholder: {
-                   
+                    Rectangle()
+                        .fill(Color.gray) 
+                        .padding(.bottom, 5)
+                        .frame(height: 240)
                 }
                 
                 Text(name)
@@ -36,7 +39,6 @@ struct MovieDetailView: View {
                     .foregroundStyle(.black)
                     
             }
-            
             
             VStack(alignment: .leading){
                 Text("Reseña")
@@ -48,13 +50,11 @@ struct MovieDetailView: View {
                 
                 Text(description)
                     .font(.caption)
-                                     .padding(.top, 2)
-                                     .padding(.horizontal, 16)
-                                     .fixedSize(horizontal: false, vertical: true)
+                    .padding(.top, 2)
+                    .padding(.horizontal, 16)
+                    .fixedSize(horizontal: false, vertical: true)
             }
                 
-       
-            
             aboutView
             
             Spacer()
@@ -69,10 +69,8 @@ struct MovieDetailView: View {
                     .renderingMode(.template)
                     .resizable()
                     .frame(width:16, height: 16)
-                Text("\(String(vote))")
                 
-                
-                
+                Text("\(String(format: "%.2f",vote))")
             }
             Divider()
             VStack(spacing:0){
@@ -81,9 +79,8 @@ struct MovieDetailView: View {
                     .renderingMode(.template)
                     .resizable()
                     .frame(width:16, height: 16)
+                
                 Text("\(String(date.split(separator: "-")[0]))")
-                
-                
             }
             
             Divider()
@@ -93,14 +90,14 @@ struct MovieDetailView: View {
                     .renderingMode(.template)
                     .resizable()
                     .frame(width:16, height: 16)
+                
                 Text("\(languague.uppercased())")
-                
-                
             }
             
             Spacer()
-        }.frame(height: 28)
-            .padding(.top, 40)
+        }
+        .frame(height: 28)
+        .padding(.top, 40)
     }
 }
 
