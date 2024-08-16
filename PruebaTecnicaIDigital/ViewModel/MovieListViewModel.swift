@@ -9,7 +9,8 @@ import Foundation
 
 class MovieListViewModel: ObservableObject {
     
-    @Published var movies:[Result] = []
+    @Published var movies:[MovieDataModel] = []
+ 
     
     func fetchMovies() {
         let urlString = "\(Constansts.MainURL.main)?api_key=\(Constansts.ApiKey.key)&query=AVENGERS"
@@ -18,8 +19,9 @@ class MovieListViewModel: ObservableObject {
             print("URL inválida")
             return
         }
-        
+    
         NetworkManager.shared.fetchData(from: url, responseType: MovieResponseDataModel.self) { [weak self] response, error in
+         
             if let error = error {
                 print("Ocurrió un : \(error.localizedDescription)")
                 return
@@ -31,7 +33,4 @@ class MovieListViewModel: ObservableObject {
             }
         }
     }
-    
-    
-    
 }

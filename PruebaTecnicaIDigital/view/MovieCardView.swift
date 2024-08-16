@@ -10,20 +10,19 @@ import SwiftUI
 struct MovieCard: View {
     var date:   String
     var name:   String
-    var img:    URL?
+    var urlImg:    URL?
     
     var body: some View {
         VStack(alignment: .leading) {
-            AsyncImage(url:img!){ phase in
+            AsyncImage(url:urlImg!){ phase in
                 phase
                     .resizable()
-                   
                     .scaledToFill()
                     .frame(height: 240)
                     .clipped()
             }placeholder: {
-                Image("image")
-                    .resizable()
+                Rectangle()
+                    .fill(Color.gray)
                     .padding(.bottom, 5)
                     .scaledToFill()
                     .frame(height: 240)
@@ -32,7 +31,6 @@ struct MovieCard: View {
             
           
             Text(name)
-        
                 .font(.headline)
                 .fontWeight(.semibold)
                 .foregroundColor(.primary)
@@ -49,14 +47,7 @@ struct MovieCard: View {
 
         }
         .frame(width: 178, height: 300)
-
-        .background(Color(.systemBackground))
         .cornerRadius(8)
-        .overlay(
-            RoundedRectangle(cornerRadius: 8)
-                .stroke(Color("Gray3"), lineWidth: 1)
-        )
-        
     }
 }
 
@@ -64,6 +55,6 @@ struct MovieCard: View {
     MovieCard(
         date: "2018-04-25",
         name: "Avengers: Infinity War",
-        img: URL(string:  "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg") ?? nil
+        urlImg: URL(string:  "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg") ?? nil
     )
 }

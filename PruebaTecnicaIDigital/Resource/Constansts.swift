@@ -15,4 +15,7 @@ struct Constansts {
     struct ApiKey {
         static let key = "ffae6ceb377fb3d244739ecd9b2c1a1d"
     }
+    struct Title {
+        static let main = "Avengers movies"
+    }
 }

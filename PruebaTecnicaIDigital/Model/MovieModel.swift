@@ -10,7 +10,7 @@ import Foundation
 // MARK: - Post
 struct MovieResponseDataModel: Codable {
     let page: Int?
-    let results: [Result]?
+    let results: [MovieDataModel]?
     let totalPages, totalResults: Int?
 
     enum CodingKeys: String, CodingKey {
@@ -20,8 +20,8 @@ struct MovieResponseDataModel: Codable {
     }
 }
 
-// MARK: - Result
-struct Result: Codable {
+// MARK: - MovieDataModel
+struct MovieDataModel: Codable {
     let adult: Bool?
     let backdropPath: String?
     let genreIDS: [Int]?
